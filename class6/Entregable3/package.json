@@ -1,0 +1,15 @@
+{
+  "name": "entregable3",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Servidor para ProductManager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JoseValdes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
