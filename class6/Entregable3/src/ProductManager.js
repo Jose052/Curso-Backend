@@ -41,7 +41,11 @@ export default class ProductManager{
         const id = products.length ? products[products.length-1].id + 1 : 1;
         const newProduct = {id, title, description, price, thumbnail, code, stock};
         products.push(newProduct)
-        await fs.promises.writeFile(pathfile, JSON.stringify(products, null, '\t'))
+        if (!fs.existsSync(pathfile)) {
+            fs.writeFileSync(pathfile, JSON.stringify(products, null, '\t'));
+          } else {
+            await fs.promises.writeFile(pathfile, JSON.stringify(products, null, '\t'));
+          }
     }
 
     updateProduct = async(id, data)=>{
