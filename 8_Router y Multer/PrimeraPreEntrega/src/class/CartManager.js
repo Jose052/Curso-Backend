@@ -20,12 +20,12 @@ export default class cartManager{
         if(cartById.length == 0){
             return {'error':'Cart not exists'}
         }
-            const products = cartById[0].product
-            console.log(products)
-            if(products == []){
-                return products
-            }
+        const products = cartById[0].product
+        console.log(products)
+        if(products.length == 0){
             return {'error':'Este carrito no contiene productos aun'}
+        }
+        return products
     }
 
     addCart= async()=>{
