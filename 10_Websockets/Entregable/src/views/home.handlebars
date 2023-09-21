@@ -1,63 +1,12 @@
-<div>
-    <h1>Home</h1>
+{{#each products}}
 
+    <div>
+        <h2>{{this.title}}</h2>
+        <h2>Descripcion: {{this.description}}</h2>
+        <p>Precio: {{this.price}}</p>
+        <p>imagen: {{this.thumbnail}}</p>
+        <p>Codigo: {{this.code}}</p>
+        <p>Stock: {{this.stock}}</p>
+    </div>
 
-    {{!-- TODO: Debe contener una lista con todos los productos agregados hasta el momento --}}
-
-    <select>
-        {{#each categories}}
-        <option value="{{this.name}}">
-            {{this.name}}
-        </option>
-        {{/each}}
-    </select>
-
-    <input id="textbox">
-    <p id="texto"></p>
-
-    <section class="products-section">
-
-        <button class="btn-delete ff-secondary fs-3">
-            Show All Products
-        </button>
-
-        <ul class="products-list">
-
-            {{#each products}}
-
-            <li class='product-item' data-id='{{this._id}}'>
-                <div class='product-item__body'>
-                    <p class='ff-secondary fs-2 ls-1'>{{this.title}}</p>
-                    <p>{{this.category}}</p>
-                    <p>{{this.Description}}</p>
-                    <p>Price: {{this.price}}</p>
-                </div>
-
-                <div class='product-item__buttons'>
-                    <button class='btn-edit ff-secondary fs-2'>
-                        Edit
-                    </button>
-                    <button class='btn-delete ff-secondary fs-2'>
-                        Delete
-                    </button>
-                </div>
-
-            </li>
-
-            {{/each}}
-
-        </ul>
-
-    </section>
-</div>
-
-
-<script src="/socket.io/socket.io.js"></script>
-<script src="/js/home.js"></script>
-
-<div>
-    <button onclick="location.href='http://localhost:8080/managerProd/create'">Agregar Producto</button>
-    <button onclick="location.href='http://localhost:8080/managerProd/delete'">Eliminar producto</button>
-</div>
-<script src="/socket.io/socket.io.js"></script>
-<script src="/js/home.js"></script>
+{{/each}}

@@ -5,6 +5,12 @@ const ProductManager = new PM();
 const router = Router()
 
 router.get('/', async(req, res)=>{
+    const products = await ProductManager.getProducts()
+        res.render('home',{products})
+    }
+)
+
+router.get('/', async(req, res)=>{
     const limit = req.query.limit
     const products = await ProductManager.getProducts()
     if(limit != undefined){
@@ -14,7 +20,6 @@ router.get('/', async(req, res)=>{
     }
     
 })
-
 
 router.get('/:pid', async(req, res)=>{
     const id = req.params.pid
