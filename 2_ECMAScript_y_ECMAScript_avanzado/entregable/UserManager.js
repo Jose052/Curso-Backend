@@ -19,7 +19,7 @@ class UserManager {
   readOne(id) {
     const userById = this.Users.filter((user) => user.id === id);
     if (userById.length == 0) {
-      return `Producto con el id ${id} no encontrado`;
+      return `Usuario con el id ${id} no encontrado`;
     }
     return userById;
   }
