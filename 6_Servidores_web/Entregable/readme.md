@@ -1,0 +1,3 @@
+Se creo un pequeño servidor con edpints para consultar datos de productos y usuarios, cada endpoint usa metodos asyncronos para realisar la consultas.
+El servidor usa express, filesystem, nodemon para poder ejecutar el servidor, cada endpints regresa los datos completos y por id.
+Se aplica el uso de dos tipos de estados en las respuesta los cuales son 202 y 404 para poder regresar la infromacion dependiendo de lo que ocurra al realizar la peticion.
