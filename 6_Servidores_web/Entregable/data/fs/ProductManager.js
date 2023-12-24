@@ -38,7 +38,7 @@ export default class ProductManager {
   readOne(id) {
     const productById = this.products.filter((product) => product.id === id);
     if (productById.length == 0) {
-      return `Producto con el id ${id} no encontrado`;
+      return [];
     }
     return productById;
   }

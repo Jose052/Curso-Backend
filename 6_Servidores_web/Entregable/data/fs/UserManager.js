@@ -39,7 +39,7 @@ export default class UserManager {
   readOne(id){
     const userById = this.users.filter((user) => user.id == string(id));
     if (userById.length == 0) {
-      return `Usuario con el id ${id} no encontrado`;
+      return [];
     }
     return userById;
   }
