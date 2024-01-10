@@ -1,0 +1,16 @@
+[
+	{
+		"id": "2d32c8932369b22a7a78d7a5",
+		"title": "producto de prueba 090124 actualizado",
+		"photo": "sin imagen",
+		"price": 200,
+		"stock": 435
+	},
+	{
+		"id": "27eb49ec440573d559cef813",
+		"title": "producto de prueba 090124",
+		"photo": "sin imagen",
+		"price": 500,
+		"stock": 435
+	}
+]
