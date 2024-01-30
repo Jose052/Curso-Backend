@@ -1,0 +1,23 @@
+[
+	{
+		"id": "d064324773d78285c16bf630",
+		"uid": "idUsuario001",
+		"pid": "idProducto001",
+		"quantity": 4,
+		"state": 0
+	},
+	{
+		"id": "1e2e5f8d981fb7687051af26",
+		"uid": "idUsuario002",
+		"pid": "idProducto002",
+		"quantity": 2,
+		"state": 0
+	},
+	{
+		"id": "afc9023c49cad9113b13e5b2",
+		"uid": "idUsuario003",
+		"pid": "idProducto003",
+		"quantity": 456665,
+		"state": 1
+	}
+]

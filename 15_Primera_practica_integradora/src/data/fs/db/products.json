@@ -1,0 +1,51 @@
+[
+	{
+		"id": "a6fabea0de578fdb39086f32",
+		"title": "Venus atrapamoscas",
+		"photo": "https://cdn0.ecologiaverde.com/es/posts/4/2/0/cuidados_de_la_venus_atrapamoscas_3024_orig.jpg",
+		"price": 25,
+		"stock": 80
+	},
+	{
+		"id": "b2cb14e931a701359f465c6f",
+		"title": "Copas de mono",
+		"photo": "https://t3.ftcdn.net/jpg/00/88/87/98/240_F_88879844_gbJGYUEVTVG4SFKzreqe1n1gHuLI4Kzb.jpg",
+		"price": 45,
+		"stock": 45
+	},
+	{
+		"id": "8bdc0d2f6618830416a8896d",
+		"title": "Pinguicula",
+		"photo": "https://www.badapedia.com/wp-content/uploads/2021/02/5ce0c5332b4f34e6711c81bc1d873e09-688x520.jpg",
+		"price": 26,
+		"stock": 47
+	},
+	{
+		"id": "d96945e91df43ad6bfe31bae",
+		"title": "Drosera",
+		"photo": "https://www.badapedia.com/wp-content/uploads/2021/02/d62017f031094e97a28ac8e286179591-688x520.jpg",
+		"price": 47,
+		"stock": 58
+	},
+	{
+		"id": "284189d7bfe1c784c6d7129d",
+		"title": "Sarracenia",
+		"photo": "https://www.badapedia.com/wp-content/uploads/2021/02/3a67e45a1595ba769d7bebd25327bbba-563x520.jpg",
+		"price": 25,
+		"stock": 47
+	},
+	{
+		"id": "9bdccb15af26bca2937e5772",
+		"title": "Sustrato 5L",
+		"photo": "https://www.carnivorasland.com/1459-large_default/turba-rubia-3-litros.jpg",
+		"price": "25",
+		"stock": "35"
+	},
+	{
+		"id": "724cfe620b6f242dbe5b7285",
+		"title": "Macetas",
+		"photo": "https://d2r9epyceweg5n.cloudfront.net/stores/073/003/products/galeria-clasica-3-21-e8a568cf54fac8efe615163877908605-1024-1024.jpg",
+		"price": "26",
+		"stock": "36"
+	}
+]
