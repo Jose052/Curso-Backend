@@ -1,0 +1,24 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    {{#each Products}}
+    {{#if @first}}
+    <div class="carousel-item active">
+    {{else}}
+    <div class="carousel-item">
+    {{/if}}
+            <img src="{{this.photo}}" width="650" height="500">
+            <div class="carousel-caption badge bg-success">
+                <h1>{{this.title}}</h1>
+            </div>
+    </div>
+    {{/each}}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
