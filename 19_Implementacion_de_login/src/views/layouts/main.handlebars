@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <link rel="stylesheet" href="/styles.css" />
+    <title>{{title}}</title>
+  </head>
+  <body
+    class="d-flex flex-column justify-content-between align-items-center bg-success-subtle"
+  >
+    <nav class="navbar navbar-expand-md bg-success w-100">
+      <img
+        src="images/logo.png"
+        class="rounded-circle"
+        width="104"
+        height="90"
+      />
+      <div class="container-fluid">
+        <a class="btn btn-light btn-lg" href="/">HOME</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="btn btn-light fs-5 m-1" href="/real">PRODUCTS</a>
+          </div>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="btn btn-info fs-5 m-1" href="/register">
+                REGISTER
+              </a>
+               <a class="btn btn-warning fs-5 m-1" href="/login">
+                LOGIN
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {{{body}}}
+    <footer class="bg-success w-100">
+      <p class="text-light m-2 text-center fw-bolder fs-4">CARNIPLANTS SHOP</p>
+    </footer>
+  </body>
+</html>
