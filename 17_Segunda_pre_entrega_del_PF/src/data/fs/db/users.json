@@ -1,0 +1,14 @@
+[
+	{
+		"id": "03085c13bbf52064c2802fa5",
+		"name": "usuario 1",
+		"photo": "sin foto",
+		"email": "usuario1@emial.com"
+	},
+	{
+		"id": "8a34affdcd7a27d5222bdb08",
+		"name": "usuario de prueba 001",
+		"photo": "sin foto",
+		"email": "ususarioPrueba001@email.com"
+	}
+]
