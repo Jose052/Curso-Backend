@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+
+.list-group {
+  max-height: 700px;
+  margin-bottom: 10px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.fondoOrders {
+ background-image: url("https://w7.pngwing.com/pngs/160/821/png-transparent-shopping-cart-computer-icons-online-shopping-supermarket-shopping-cart-service-shopping-centre-marketplace.png");
+}
