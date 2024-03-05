@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+
+.list-group {
+  max-height: 700px;
+  margin-bottom: 10px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.fondo {
+ background-image: url("https://img.freepik.com/fotos-premium/fondo-musgo-verde_566221-31.jpg");
+ background-repeat: no-repeat;
+ background-size: auto;
+}

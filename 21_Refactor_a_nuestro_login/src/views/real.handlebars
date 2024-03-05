@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg w-100" style="background-color: #c6e69f;">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <input
+        class="form-control"
+        id="myInput"
+        type="text"
+        placeholder="Search.."
+      />
+      <button
+        id="search"
+        type="button"
+        class="w-100 btn btn-success"
+        width="104"
+      >search</button>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item active">
+        <a class="btn btn-success fs-5 m-1" href="/form">
+          ADD PRODUCT
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<main class="flex-grow-1 d-flex w-100 flex-wrap justify-content-evenly">
+  <article class="d-flex flex-wrap justify-content-evenly" id="products">
+  </article>
+</main>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/scripts/real.js"></script>

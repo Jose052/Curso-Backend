@@ -1,0 +1,29 @@
+<form
+  style="max-width: 360px;"
+  class="w-100 d-flex flex-column justify-content-center items-align-center"
+>
+  <fieldset class="mb-3 text-center">
+    <label for="title" class="form-label mb-0">Title</label>
+    <input type="text" class="form-control" id="title" />
+  </fieldset>
+  <fieldset class="mb-3 text-center">
+    <label for="photo" class="form-label mb-0">Photo</label>
+    <input type="text" class="form-control" id="photo" />
+  </fieldset>
+  <fieldset class="mb-3 text-center">
+    <label for="price" class="form-label mb-0">Price</label>
+    <input type="number" class="form-control" id="price" />
+  </fieldset>
+  <fieldset class="mb-3 text-center">
+    <label for="stock" class="form-label mb-0">stock</label>
+    <input type="number" class="form-control" id="stock" />
+  </fieldset>
+  <button
+    id="newProduct"
+    type="button"
+    class="w-100 btn btn-success"
+  >CREATE!</button>
+</form>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/scripts/form.js"></script>
