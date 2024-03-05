@@ -1,5 +1,6 @@
 import { socketServer } from "../../server.js";
 import { Products as PM } from "../data/mongo/manager.mongo.js";
+import { Orders as OM } from "../data/mongo/manager.mongo.js";
 import propsProducts from "../utils/propsProducts.mid.js";
 
 export default async (socket) => {
@@ -22,4 +23,6 @@ export default async (socket) => {
       socketServer.emit("products", await PM.read(filter));
     } catch (error) {}
   });
+
+  socket.emit("orders", await OM.ordersByUser("65c405d2b343f63a79276e99"));
 };

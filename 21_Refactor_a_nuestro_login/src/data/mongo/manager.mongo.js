@@ -49,12 +49,7 @@ class MongoManager {
 
   async readByEmail(email){
     try {
-      const one = await this.model.findOne({email});
-      if (!one) {
-        const error = new Error(`El registro con el email ${email} no existe`);
-        error.statusCode = 404;
-        throw error;
-      }
+      const one = await this.model.findOne({ email });
       return one;
     } catch (error) {
       throw error;
@@ -71,6 +66,37 @@ class MongoManager {
         throw error;
       }
       return one;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  async ordersByUser(uid){
+    try{
+      const orders = await this.model.aggregate([
+        {$match: {uid: new Types.ObjectId(uid)}},
+        {
+          $lookup: {
+            from: "products",
+            foreignField: "_id",
+            localField: "pid",
+            as: "product_id",
+          },
+        },
+        {
+          $project: {
+            _id: false,
+            idOrder: "$_id",
+            product_photo: "$product_id.photo",
+            product_price: "$product_id.price",
+            quantity: "$quantity",
+            state: "$state",
+            orderdate: "$createdAt",
+            currency: "USD",
+          },
+        },
+      ])
+      return orders
     } catch (error) {
       throw error;
     }
@@ -106,7 +132,6 @@ class MongoManager {
             currency: "USD",
           },
         },
-      
       ]);
       console.log(report)
       return report;

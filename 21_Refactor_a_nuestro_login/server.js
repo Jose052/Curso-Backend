@@ -1,3 +1,4 @@
+import "dotenv/config.js";
 import express from "express";
 import morgan from "morgan";
 import { createServer } from "http";
@@ -5,7 +6,6 @@ import { Server } from "socket.io";
 import { engine } from "express-handlebars";
 import cookieParser from "cookie-parser";
 import expressSession from "express-session";
-import sessionFileStore from "express-session";
 import MongoStore from "connect-mongo";
 
 import router from "./src/routers/index.router.js";
@@ -14,14 +14,13 @@ import errorHandler from "./src/middlewares/errorHandler.mid.js";
 import pathHandler from "./src/middlewares/pathHandler.mid.js";
 import __dirname from "./utils.js";
 
-import "dotenv/config.js";
-
 import dbconection from "./src/utils/db.js";
 
 const server = express();
 const Port = 8080;
 const ready = () => {
   console.log(`Servidor escuchando en el puerto ${Port}`);
+  console.log(process.env.client_id);
   dbconection();
 };
 const httpServer = createServer(server);

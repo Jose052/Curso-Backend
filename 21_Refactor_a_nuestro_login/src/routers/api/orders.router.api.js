@@ -69,6 +69,19 @@ ordersRouter.put("/:oid", async (req, res, next) => {
   }
 });
 
+ordersRouter.get("/ordersByUser/:uid", async (req, res, next) => {
+  try {
+    const uid = req.params.uid;
+    const response = await OM.ordersByUser(uid);
+    return res.json({
+      statusCode: 200,
+      response,
+    });
+  } catch (error) {
+    return next(error);
+  }
+});
+
 ordersRouter.get("/total/:uid", async (req, res, next) => {
   try {
     const uid = req.params.uid;
